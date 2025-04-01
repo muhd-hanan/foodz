@@ -3,59 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Responsive Account Page</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="css/style.css">
-
 </head>
-<body>
+<body class="bg-gray-100">
     
-    <header class="h-[80px] w-full shadow-md mb-20">
-        <section class="wrapper h-full flex justify-start items-center">
-            <a href=""><img class="w-5" src="./images/arrow.png" alt=""></a>
-           <h2 class="text-center w-full font-bold text-[25px] text-gray-700  ">Account</h2>
+   
+    <header class="h-[80px] w-full shadow-md mb-10 bg-white">
+        <section class="wrapper h-full flex items-center px-4">
+            <a href="" class="flex items-center">
+                <img class="w-6" src="./images/arrow.png" alt="Back">
+            </a>
+            <h2 class="text-center flex-1 font-bold text-[22px] text-gray-700">Account</h2>
         </section>
     </header>
-    <section class="wrapper h-full ">
-        <div class="flex justify-start gap-10 mr-6">
-            <div class="w-[380px] h-[60vh] ml-14  ">
-                <div class="m-3 pb-3 border-2 w-[400px]  rounded-lg border-gray-300 shadow-sm  flex justify-start gap-2 items-center">
-                    <img src="./images/man.png" class="w-20 mt-4 ml-6" alt="">
 
-                    <div class="pl-2 pt-4">
-                        <h3 class="text-[14px] pb-1 font-semibold">adil</h3>
-                        <p class="text-[14px] pb-1 font-semibold">6524664</p>
-                        <p class="text-[14px] font-semibold">adil@gmaol.com</p>
+    <section class="wrapper px-4">
+        <div class="flex flex-col md:flex-row gap-10">
+            
+        
+            <div class="w-full md:w-[380px]">
+                <div class="m-3 p-4 border-2 rounded-lg border-gray-300 shadow-sm flex items-center gap-4 bg-white">
+                    <img src="./images/man.png" class="w-20" alt="User">
+                    <div>
+                        <h3 class="text-[16px] font-semibold">Adil</h3>
+                        <p class="text-[14px] font-semibold">6524664</p>
+                        <p class="text-[14px] font-semibold">adil@gmail.com</p>
                     </div>
                 </div>
                 
-                <div class=" w-full pl-[5%]     " >
                 
-                <a class="h-[5vh]   w-[370px] ml- bg-green-500 text-cente text-white text-[14px] py-2 rounded-lg mt-6 flex  justify-start gap-4" href=""><img class="w-5 ml-4   " src="./images/address.png " alt=""> <span class="font-semibold">Manage address</span></a>
-                <a class="h-[5vh]   w-[370px] ml- bg-green-500 text-cente text-white text-[14px] py-2 rounded-lg mt-6 flex  justify-start gap-4" href=""><img class="w-5 ml-4   " src="./images/cart.png " alt=""> <span class="font-semibold">Orders</span></a>
-                <a class="h-[5vh]   w-[370px] ml- bg-green-500 text-cente text-white text-[14px] py-2 rounded-lg mt-6 flex  justify-start gap-4" href=""><img class="w-5 ml-4   " src="./images/logout.png" alt=""> <span class="font-semibold">Logout</span></a>
-
+                <div class="mt-5 flex flex-col gap-4">
+                    <a class="flex items-center bg-[#26C485] text-white text-[14px] py-3 px-4 rounded-lg shadow-md hover:bg-[#289460]" href="">
+                        <img class="w-5 mr-3" src="./images/address.png" alt=""> 
+                        <span class="font-semibold">Manage Address</span>
+                    </a>
+                    <a class="flex items-center bg-[#26C485] text-white text-[14px] py-3 px-4 rounded-lg shadow-md hover:bg-[#289460]" href="">
+                        <img class="w-5 mr-3" src="./images/cart.png" alt=""> 
+                        <span class="font-semibold">Orders</span>
+                    </a>
+                    <a class="flex items-center bg-[#26C485] text-white text-[14px] py-3 px-4 rounded-lg shadow-md hover:bg-[#289460]" href="">
+                        <img class="w-5 mr-3" src="./images/logout.png" alt=""> 
+                        <span class="font-semibold">Logout</span>
+                    </a>
                 </div>
-
             </div>
-            <div class="ml-16">
-                <h3 class="font-bold text-[20px]  text-[#363333]">Recents Orders</h3>
-                <div class="w-[380px] h-[170px] border-gray-500 border-2 rounded-lg p-2 mt-5 relative">
-                    <div class="flex justify-start gap-3 mt-2 ml-2 border-b-2 border-gray-500 pb-3">
+
+            
+            <div class="flex-1">
+                <h3 class="font-bold text-[20px] text-[#363333] mb-4">Recent Orders</h3>
+                <div class="w-full max-w-md border-2 border-gray-300 rounded-lg p-4 shadow-sm bg-white">
+                    
+                   
+                    <div class="flex items-center gap-3 pb-3 border-b-2 border-gray-300">
                         <img src="./images/rest1.png" alt="" class="w-16 rounded-md">
-                        <div class="">
-                            <h4 class="font-semibold pt-1    ">Alfam full</h4>
-                            <p class="text-[14px] font-semibold mt-2">$ 30 |<span>2 items</span></p>
+                        <div>
+                            <h4 class="font-semibold">Alfam Full</h4>
+                            <p class="text-[14px] font-semibold">$30 | <span>2 items</span></p>
                         </div>
-                        <a href="" class="absolute right-4 underline text-gray-500 font-semibold text-[12px]">#162</a>
-
+                        <a href="" class="ml-auto text-gray-500 underline text-[12px] font-semibold">#162</a>
                     </div>
 
-                    <a href=""></a>
-                </div>
+                    
+                    <div class="flex justify-between items-center mt-3">
+                        <a class="bg-[#26C485] hover:bg-[#289460] text-white px-3 py-2 rounded-lg font-semibold text-[14px]" href="">Track Order</a>
+                        <p class="text-red-600 font-bold">Preparing</p>
+                    </div>
 
+                </div>
             </div>
+            
         </div>
     </section>
+
 </body>
 </html>
