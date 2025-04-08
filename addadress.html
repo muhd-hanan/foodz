@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Add <Address></Address></title>
+    <title> Address</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -18,13 +18,41 @@
         </section>
     </header class="wrapper w-full  ">
             <div class="w-[500px] h-[70vh] rounded-lg  mx-auto   ">
-                <div class="w-full h-[30vh] rounded-lg bg-gray-400">
+                <div class="w-full h-[27vh] rounded-lg bg-gray-400">
                     
 
                 </div>
                 <form action="" class=" mt-2">
-                    <label for="Address">Address</label> <br>
-                    <input type="text" id="Address" class="w-full border-black border-2">
+                    <label for="Address" class="font font-semibold text-[15px] text-gray-800">Address</label> <br>
+                    <input type="text" id="Address" class="w-full mb-3 rounded-md border-gray-400 h-[6vh] px-3 border-2">
+
+                    <label for="Apartment" class="font font-semibold   text-[15px] text-gray-800">Apartment</label> <br>
+                    <input type="text" id="Apartment" class="w-full mb-3 rounded-md border-gray-400 h-[6vh] px-3 border-2">
+
+                    <label for="Land Mark" class="font font-semibold mt-2 text-[15px] text-gray-800">Land Mark</label> <br>
+                    <input type="text" id="Land Mark" class="w-full mb-3 rounded-md border-gray-400 h-[6vh] px-3 border-2">
+
+                    <h2 class="font-semibold text-[15px] text-gray-800">Label Us</h2>
+                    <div class="flex w-full mt-3">
+                        <label for="home" class="flex items-center w-1/3">
+                            <input type="radio" id="home" name="label" class="hidden peer">
+                            <span class="text-gray-800 font-semibold px-4 py-2 w-full rounded mx-2 peer-checked:bg-red-500 peer-checked:text-white">HOME</span>
+                        </label>
+                        <label for="work" class="flex items-center w-1/3">
+                            <input type="radio" id="work" name="label" class="hidden peer">
+                            <span class="text-gray-800 font-semibold px-4 py-2 w-full rounded mx-2 peer-checked:bg-red-500 peer-checked:text-white">WORK</span>
+                        </label>
+                        <label for="other" class="flex items-center w-1/3">
+                            <input type="radio" id="other" name="label" class="hidden peer">
+                            <span class="text-gray-800 font-semibold px-4 py-2 w-full rounded mx-2 peer-checked:bg-red-500 peer-checked:text-white mb-3">OTHER</span>
+                        </label>
+                    </div>
+                    <button class="w-full mb-3 rounded-md bg-red-500 font-semibold text-white h-[6vh] px-3 border-2">SAVE ADRESS</button>
+                    
+
+
+               
+                    
                 </form>
 
             </div>
